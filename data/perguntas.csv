@@ -1,0 +1,21 @@
+id,tipo,pergunta,resposta_referencia,chunk_fonte
+q01,disciplina,Quem é o professor da INF1027 e qual o e-mail dele?,"Andrew Diniz da Costa, DSc., do Departamento de Informática da PUC-Rio; e-mail andrew@puc-rio.br.",intro-01
+q02,disciplina,Em que data é a P1?,14/10 (a revisão para a P1 é em 07/10).,intro-03
+q03,disciplina,Como é calculado o G1?,G1 = P1 * 0.8 + N&P * 0.2 (N&P = nanochallenges e participação em aula).,intro-06
+q04,disciplina,Quais dias são feriado sem aula?,"07/09 (Independência do Brasil), 12/10 (Nossa Senhora Aparecida) e 02/11 (Finados).",intro-05
+q05,disciplina,Quais são os livros da bibliografia básica?,"Wagner, Software Product Quality Control (Springer, 2013); Delamaro, Maldonado e Jino, Introdução ao Teste de Software (Elsevier, 2ª ed., 2016); Aniche, Effective Software Testing: A Developer's Guide (2022).",intro-08
+q06,disciplina,O que acontece se eu faltar a P1?,"Sem justificativa plausível, a nota é zero; com justificativa, o aluno pode fazer a segunda chamada.",intro-06
+q07,materia,"Qual a diferença entre erro, defeito e falha?","Erro é o desvio da especificação (universo da informação); defeito é a manifestação do erro no código ou documentação, o bug (universo físico); falha é o problema observado ao executar o software, um evento em que ele não cumpre seu propósito (universo do usuário).",defeitos-01
+q08,materia,O que significa a sigla FIRST?,"Princípios para a qualidade de código de teste: Fast, Isolated/Independent, Repeatable, Self-Validating e Timely.",solid-11
+q09,materia,Quais são as técnicas de teste caixa preta vistas na disciplina?,"Partição de equivalência, análise do valor limite, tabela de decisão, teste de transição de estados e teste de caso de uso.",caixapreta-01
+q10,materia,Quais são as naturezas de defeitos em documentos de requisitos segundo a taxonomia de Shull?,"Omissão, ambiguidade, inconsistência, fato incorreto e informação estranha.",defeitos-06
+q11,materia,"Segundo o estudo do Google citado na aula, que porcentagem dos testes pode ser flaky?",Aproximadamente 16% (estudo do Google de 2016).,solid-13
+q12,materia,O que é a análise do valor limite?,"Técnica caixa preta que testa os limites (máximo e mínimo) das partições de equivalência, pois é nos limites que há maior probabilidade de comportamento incorreto; é considerada uma extensão da partição de equivalência.",caixapreta-04
+q13,multi,Qual a data de entrega do desafio e quantas pessoas compõem cada time?,Entrega em 25/11 (início das apresentações); times de 4 pessoas.,intro-04;challenge-01
+q14,multi,Uma God class viola qual princípio SOLID e pertence a qual categoria de code smell?,Viola o Princípio da Responsabilidade Única (SRP) e é um sintoma de Bloaters (inchaços).,solid-06;solid-02
+q15,multi,Quais são as variações do teste de desempenho e que riscos ele ajuda a verificar?,"Variações: teste de carga, de stress e de configuração. Riscos: capacidade, componente, longevidade, comparação, carga e validação (violação de SLA).",visao-14;visao-15
+q16,multi,Que ferramentas são citadas para teste unitário e para teste de aceitação?,"Unitário: JUnit, DBUnit, TestNG (Java), NUnit (.NET), PhpUnit (PHP). Aceitação: Selenium IDE, Rational Functional Tester/Test Manager/Service Tester (IBM), SilkCentral Test Manager (Borland), Quality Center (HP) e SoapUI (WebServices).",visao-12;visao-13
+q17,armadilha,Quais são as técnicas de teste caixa branca vistas na disciplina?,NÃO CONSTA,
+q18,armadilha,O que é a pirâmide de testes?,NÃO CONSTA,
+q19,armadilha,Qual é o limite de faltas para não ser reprovado por frequência?,NÃO CONSTA,
+q20,armadilha,Em que sala e horário são as aulas da INF1027?,NÃO CONSTA,
