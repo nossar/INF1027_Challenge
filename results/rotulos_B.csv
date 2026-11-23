@@ -1,0 +1,855 @@
+id_amostra,pergunta,resposta_referencia,trechos,resposta,correta,absteve,fiel
+a01,O que significa a sigla FIRST?,"Princípios para a qualidade de código de teste: Fast, Isolated/Independent, Repeatable, Self-Validating e Timely.","[solid-11] O que é FIRST? Princípios voltados a melhorar a qualidade dos códigos de testes; cada letra é um princípio (Fonte: livro Clean Code, do Tio Bob). FIRST significa: Fast, Isolated ou Independent, Repeatable, Self-Validating e Timely.
+[solid-05] O que é SOLID? SOLID é um acrônimo criado por Michael Feathers, após observar que cinco princípios da orientação a objetos e design de código poderiam se encaixar nessa palavra. Esses princípios ajudam o programador a escrever códigos mais limpos, separando responsabilidades, diminuindo acoplamentos, facilitando a refatoração e estimulando o reaproveitamento do código.
+Os 5 princípios:
+- S: Single Responsibility Principle (Princípio da Responsabilidade Única)
+- O: Open-Closed Principle (Princípio Aberto-Fechado)
+- L: Liskov Substitution Principle (Princípio da Substituição de Liskov)
+- I: Interface Segregation Principle (Princípio da Segregação da Interface)
+- D: Dependency Inversion Principle (Princípio da Inversão da Dependência)
+[visao-09] Caso de Teste - estrutura geral:
+- ID: identificação única do caso de teste.
+- Descrição: breve e objetiva.
+- Pré-requisitos: necessários antes da execução do teste.
+- Entradas: dados de teste a serem passados ao sistema.
+- Passos: instruções de como realizar o teste.
+- Resultados esperados: como o sistema deve reagir de acordo com os passos do teste.
+- Resultados obtidos: como o sistema de fato reagiu.
+- Sucesso/Fracasso: resultado da comparação entre o resultado esperado e o obtido (em fila, bloqueado, em andamento, em alerta, fechado, não realizado etc.).
+[solid-12] FIRST - Fast (rápido): criar testes com frequência; execução dos testes em milissegundos; dividir os testes criados em suítes menores, para que a execução seja mais rápida, é uma boa prática.
+FIRST - Independente (Isolated/Independent): não crie dependências entre testes; use a configuração do próprio teste para prepará-lo; a ordem de execução dos testes deve ser independente.","A sigla **FIRST** reúne cinco princípios para melhorar a qualidade dos códigos de teste. Eles aparecem no livro *Clean Code*, de Tio Bob, e cada letra representa um princípio:
+
+- **F – Fast (Rápido):** os testes devem ser executados em milissegundos. Por isso, é boa prática dividi-los em suítes menores.
+- **I – Isolated ou Independent (Isolado ou Independente):** um teste não deve depender de outro. Ele deve preparar o próprio ambiente pela sua configuração, e a ordem de execução não deve afetar o resultado.
+- **R – Repeatable (Repetível):** o teste deve produzir o mesmo resultado em todas as execuções.
+- **S – Self-Validating (Autovalidável):** o teste deve indicar sozinho se passou ou falhou, sem exigir interpretação manual.
+- **T – Timely (Oportuno):** os testes devem ser escritos no momento certo, em geral junto com o código ou antes dele.",,,
+a02,O que significa a sigla FIRST?,"Princípios para a qualidade de código de teste: Fast, Isolated/Independent, Repeatable, Self-Validating e Timely.","[solid-11] O que é FIRST? Princípios voltados a melhorar a qualidade dos códigos de testes; cada letra é um princípio (Fonte: livro Clean Code, do Tio Bob). FIRST significa: Fast, Isolated ou Independent, Repeatable, Self-Validating e Timely.
+[solid-05] O que é SOLID? SOLID é um acrônimo criado por Michael Feathers, após observar que cinco princípios da orientação a objetos e design de código poderiam se encaixar nessa palavra. Esses princípios ajudam o programador a escrever códigos mais limpos, separando responsabilidades, diminuindo acoplamentos, facilitando a refatoração e estimulando o reaproveitamento do código.
+Os 5 princípios:
+- S: Single Responsibility Principle (Princípio da Responsabilidade Única)
+- O: Open-Closed Principle (Princípio Aberto-Fechado)
+- L: Liskov Substitution Principle (Princípio da Substituição de Liskov)
+- I: Interface Segregation Principle (Princípio da Segregação da Interface)
+- D: Dependency Inversion Principle (Princípio da Inversão da Dependência)
+[visao-09] Caso de Teste - estrutura geral:
+- ID: identificação única do caso de teste.
+- Descrição: breve e objetiva.
+- Pré-requisitos: necessários antes da execução do teste.
+- Entradas: dados de teste a serem passados ao sistema.
+- Passos: instruções de como realizar o teste.
+- Resultados esperados: como o sistema deve reagir de acordo com os passos do teste.
+- Resultados obtidos: como o sistema de fato reagiu.
+- Sucesso/Fracasso: resultado da comparação entre o resultado esperado e o obtido (em fila, bloqueado, em andamento, em alerta, fechado, não realizado etc.).
+[solid-12] FIRST - Fast (rápido): criar testes com frequência; execução dos testes em milissegundos; dividir os testes criados em suítes menores, para que a execução seja mais rápida, é uma boa prática.
+FIRST - Independente (Isolated/Independent): não crie dependências entre testes; use a configuração do próprio teste para prepará-lo; a ordem de execução dos testes deve ser independente.","A sigla FIRST significa:
+
+- **F**ast (rápido)
+- **I**solated ou **I**ndependent (isolado ou independente)
+- **R**epeatable (repetível)
+- **S**elf-Validating (auto-validável)
+- **T**imely (oportuno)
+
+Esses são princípios voltados a melhorar a qualidade dos códigos de testes, e cada letra representa um princípio (Fonte: livro *Clean Code*, de Tio Bob).",,,
+a03,"Qual a diferença entre erro, defeito e falha?","Erro é o desvio da especificação (universo da informação); defeito é a manifestação do erro no código ou documentação, o bug (universo físico); falha é o problema observado ao executar o software, um evento em que ele não cumpre seu propósito (universo do usuário).","[defeitos-01] Diferença entre Erro, Defeito e Falha:
+- Erro (universo da informação): desvio da especificação realizado após a definição dos requisitos. O valor atribuído (desvio) é diferente do valor esperado (requisito).
+- Defeito (universo físico): o erro irá introduzir um defeito no código de software. A manifestação de um erro pode ser chamada de defeito; com isso temos a produção de um bug no código ou na documentação do sistema.
+- Falha (universo do usuário): problema encontrado ao executar o software. A falha é um evento: é um software que não cumpriu o seu propósito.
+[garantia-09] Gerência da Validação. Exemplos de medidas para gerir o processo de validação (Rocha et al., 2012):
+- Densidade de defeitos identificados em avaliação de requisitos
+- Esforço de retrabalho para correção de defeitos nos requisitos
+- Densidade de defeitos identificados nos testes de homologação
+- Esforço de retrabalho para a correção de defeitos em testes de homologação
+[defeitos-05] Principal causa de defeitos de software: tradução incorreta de informações. Quanto antes a presença do defeito for revelada, menor o custo de correção do defeito e maior a probabilidade de corrigi-lo corretamente.
+[garantia-07] Gerência de Verificação. Exemplos de medidas para gerir o processo de verificação (Rocha et al., 2012):
+- Densidade de defeitos identificados em revisões por pares
+- Esforço para a realização de revisões por pares
+- Densidade de defeitos identificados nos testes de software
+- Esforço para a realização de testes
+- Taxa de defeitos corrigidos
+- Taxa de cobertura de funcionalidades dos testes
+- Densidade de defeitos identificados após o software entrar em produção
+- Esforço de retrabalho para a correção de defeitos de produção
+- Tempo médio entre falhas
+- Tempo médio para a correção de um defeito","Com base no material da disciplina:
+
+- **Erro** (universo da informação): desvio da especificação ocorrido após a definição dos requisitos. O valor atribuído (desvio) é diferente do valor esperado (requisito).
+- **Defeito** (universo físico): o erro introduz um defeito no código de software. A manifestação de um erro pode ser chamada de defeito, o que produz um bug no código ou na documentação do sistema.
+- **Falha** (universo do usuário): problema encontrado ao executar o software. A falha é um evento: ocorre quando o software não cumpre o seu propósito.",,,
+a04,Quem é o professor da INF1027 e qual o e-mail dele?,"Andrew Diniz da Costa, DSc., do Departamento de Informática da PUC-Rio; e-mail andrew@puc-rio.br.","[intro-01] Disciplina Teste e Medição de Software (INF1027), PUC-Rio. Professor: Andrew Diniz da Costa, DSc., do Departamento de Informática (andrew@puc-rio.br).
+O professor é professor de Engenharia de Software do DI da PUC-Rio, orientador de alunos de graduação, pesquisador e coordenador de projetos acadêmicos e de pesquisa no Laboratório de Engenharia de Software (LES), consultor educacional no ECOA e tem mais de 25 anos de experiência com projetos de desenvolvimento.
+[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[challenge-01] Regras do Challenge (desafio) da disciplina:
+- Time de 4 pessoas.
+- Entregáveis: Documento CBL e Apresentação (PDF) no formato de 7 minutos.
+- A entrega será no Moodle.
+[visao-06] Papéis envolvidos em testes. Dedicação: Analista de Teste, Testador e Consultor (de ferramentas e de processos). Apoio: DBA ou AD, Técnico / Infraestrutura, Desenvolvedor e Gerente de Projeto.
+Artefatos de teste: Plano de Teste, Caso de teste, Scripts de Teste Automatizado, Matriz de rastreabilidade, Logs de Execução e Registro de Problema.","O professor da INF1027 (Teste e Medição de Software) é o **Andrew Diniz da Costa, DSc.**, do Departamento de Informática da PUC-Rio. O e-mail dele é **andrew@puc-rio.br**.",,,
+a05,Quais são as técnicas de teste caixa branca vistas na disciplina?,NÃO CONSTA,"[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.
+[caixapreta-01] Técnicas baseadas em especificação ou caixa preta: Partição de equivalência, Análise do valor limite, Tabela de decisão, Teste de transição de estados e Teste de caso de uso.
+[visao-17] Processo de teste, de forma geral: Planejar Teste -> Projetar Teste -> Executar Teste -> Analisar Resultado. Se há defeito, passa-se a Gerenciar Resultado.
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.","O contexto fornecido não apresenta técnicas de teste caixa branca. Ele traz apenas as **técnicas baseadas em especificação ou caixa preta**: partição de equivalência, análise do valor limite, tabela de decisão, teste de transição de estados e teste de caso de uso.
+
+Para saber quais técnicas de caixa branca foram vistas na disciplina, consulte os slides ou o plano de ensino da INF1027, ou pergunte diretamente ao professor.",,,
+a06,"Qual a diferença entre erro, defeito e falha?","Erro é o desvio da especificação (universo da informação); defeito é a manifestação do erro no código ou documentação, o bug (universo físico); falha é o problema observado ao executar o software, um evento em que ele não cumpre seu propósito (universo do usuário).","[defeitos-01] Diferença entre Erro, Defeito e Falha:
+- Erro (universo da informação): desvio da especificação realizado após a definição dos requisitos. O valor atribuído (desvio) é diferente do valor esperado (requisito).
+- Defeito (universo físico): o erro irá introduzir um defeito no código de software. A manifestação de um erro pode ser chamada de defeito; com isso temos a produção de um bug no código ou na documentação do sistema.
+- Falha (universo do usuário): problema encontrado ao executar o software. A falha é um evento: é um software que não cumpriu o seu propósito.
+[garantia-09] Gerência da Validação. Exemplos de medidas para gerir o processo de validação (Rocha et al., 2012):
+- Densidade de defeitos identificados em avaliação de requisitos
+- Esforço de retrabalho para correção de defeitos nos requisitos
+- Densidade de defeitos identificados nos testes de homologação
+- Esforço de retrabalho para a correção de defeitos em testes de homologação
+[defeitos-05] Principal causa de defeitos de software: tradução incorreta de informações. Quanto antes a presença do defeito for revelada, menor o custo de correção do defeito e maior a probabilidade de corrigi-lo corretamente.
+[garantia-07] Gerência de Verificação. Exemplos de medidas para gerir o processo de verificação (Rocha et al., 2012):
+- Densidade de defeitos identificados em revisões por pares
+- Esforço para a realização de revisões por pares
+- Densidade de defeitos identificados nos testes de software
+- Esforço para a realização de testes
+- Taxa de defeitos corrigidos
+- Taxa de cobertura de funcionalidades dos testes
+- Densidade de defeitos identificados após o software entrar em produção
+- Esforço de retrabalho para a correção de defeitos de produção
+- Tempo médio entre falhas
+- Tempo médio para a correção de um defeito","Segundo o contexto da disciplina, os três termos descrevem o mesmo problema em momentos e ""universos"" diferentes:
+
+- **Erro (universo da informação):** é um desvio da especificação, cometido após a definição dos requisitos. O valor atribuído é diferente do valor esperado pelo requisito.
+
+- **Defeito (universo físico):** é a manifestação do erro no próprio artefato, ou seja, no código ou na documentação do sistema. O erro introduz um defeito, que se torna um *bug*.
+
+- **Falha (universo do usuário):** é o problema observado na execução do software. Ela é um evento em que o software não cumpre o seu propósito.
+
+Em resumo: um **erro** cometido por alguém gera um **defeito** no código ou na documentação, e o defeito, ao ser executado, pode produzir uma **falha** percebida pelo usuário.",,,
+a07,Uma God class viola qual princípio SOLID e pertence a qual categoria de code smell?,Viola o Princípio da Responsabilidade Única (SRP) e é um sintoma de Bloaters (inchaços).,"[solid-02] Code Smells mais comuns: Bloaters (inchaços), Object-Orientation Abusers (abusadores de orientação a objetos), Change Preventers (preventores de mudança), Dispensables (dispensáveis) e Couplers (acopladores).
+- Bloaters: quando um código cresce demais, já que as suas responsabilidades não foram bem definidas durante o seu planejamento; ocorre quando o código consome responsabilidades de outras classes; aparecimento de God classes.
+- Object-Orientation Abusers: violação da orientação a objetos. A aplicação inadequada, total ou parcial, de herança, polimorfismo ou encapsulamento pode provocar problemas no código. Dica: repare se o código tem muitos ifs ou switches complexos.
+[solid-06] Princípio da Responsabilidade Única (SRP): uma classe deve ter um, e somente um, motivo para mudar. Evitar ""God class""; cada classe cuida da sua responsabilidade.
+Consequências da violação do princípio da responsabilidade única:
+- Falta de coesão: uma classe não deve assumir responsabilidades que não são suas.
+- Alto acoplamento: mais responsabilidades geram um maior nível de dependência, deixando o sistema engessado e frágil para alterações.
+- Dificuldades na implementação de testes automatizados.
+- Dificuldades para reaproveitar o código.
+[solid-01] O que é Code Smell? Code Smell (cheiro de código) é qualquer característica no código-fonte de um programa que possivelmente indica um problema mais profundo. Code Smells não são bugs, contudo indicam pontos fracos que podem ocasionar falhas no presente ou no futuro (Fonte: Martin Fowler, ""Refactoring: improving the design of existing code"").
+Prevenção: o melhor é prevenir. O problema mais profundo pode ser descoberto por meio de ciclos curtos de feedback, observando o design para examinar se há novos Code Smells espalhados.
+[solid-04] Atividade 1 de Code Smell: melhorar um código proposto aplicando boas práticas de POO, pensando em facilitar manutenção, evolução de código e reuso. O código tem as classes Chocolate (titulo, marca, descricao, niveldeAmargor, peso) e Camisa (titulo, marca, descricao, tamanho, materialUsado), e a classe Carrinho, com um comentário longo, uma lista separada para camisas e outra para chocolates, um atributo x não usado e os métodos adicionarCamisa e adicionarChocolate.","Uma God class viola o **Princípio da Responsabilidade Única (SRP)**, que diz que uma classe deve ter um, e somente um, motivo para mudar. Ela pertence à categoria de code smell **Bloaters (inchaços)**, pois o aparecimento de God classes é citado como um dos sinais dessa categoria.",,,
+a08,Quais são os livros da bibliografia básica?,"Wagner, Software Product Quality Control (Springer, 2013); Delamaro, Maldonado e Jino, Introdução ao Teste de Software (Elsevier, 2ª ed., 2016); Aniche, Effective Software Testing: A Developer's Guide (2022).","[intro-08] Bibliografia básica:
+- WAGNER, S., ""Software Product Quality Control"". Springer, 2013.
+- DELAMARO, M.E., MALDONADO, J.C., JINO, M., ""Introdução ao Teste de Software"". Elsevier, 2ª edição, 2016.
+- ANICHE, M., ""Effective Software Testing: A Developer's Guide"". Simon and Schuster, 2022.
+Bibliografia complementar:
+- FENTON, N.E., BIEMAN, J., ""Software Metrics: A Rigorous and Practical Approach"". CRC, 3ª edição, 2014.
+- MYERS, G., BADGETT, T., THOMAS, T., SANDLER, C., ""The Art of Software Testing"". Wiley, 3ª edição, 2012.
+- TIAN, J., ""Software Quality Engineering"". Wiley-Interscience, 2005.
+- VINCENZI, A.M.R. et al., ""Automatização de Teste de Software com Ferramentas de Software Livre"". Elsevier, 2018.
+[defeitos-07] Referências da aula de defeitos: Boehm e Basili, Software Defect Reduction Top 10 List (IEEE Software, 2001); Endres e Rombach, A Handbook of Software and Systems Engineering (Addison Wesley, 2003); IBM, Orthogonal Defect Classification v5.2 (2013); IEEE Std 1044-2009, Standard Classification for Software Anomalies (2010); Kalinowski, Card e Travassos, Evidence-Based Guidelines to Defect Causal Analysis (IEEE Software, 2012); Wagner, Software Product Quality Control (Springer, 2013).
+[defeitos-06] Taxonomia definida por Shull (1998), a partir do padrão IEEE 830 (1998), para a natureza de defeitos em documentos de requisitos:
+- Omissão: informação necessária não incluída.
+- Ambiguidade: informação passível de ter múltiplas interpretações.
+- Inconsistência: informações conflitantes.
+- Fato Incorreto: informação que não é verdadeira para as condições especificadas.
+- Informação Estranha: informação desnecessária.
+Atividade da aula: identificar um exemplo prático comum para cada natureza de defeito.
+[garantia-05] Recorte de um checklist de garantia da qualidade. Colunas: Fase, Questão, Foco (Processo ou Produto), Sim, Não. Exemplos de questões da Fase de Levantamento:
+1. Foram realizadas reuniões para o levantamento de requisitos? (Processo)
+1.1. Foram gerados documentos de controle, como atas, após as reuniões? (Processo)
+1.2. Os documentos gerados foram assinados por todos os participantes da(s) reunião(ões)? (Produto)
+2. O documento de visão foi criado? (Processo)
+2.2. O escopo do documento de visão está definido no mesmo? (Produto)
+2.3. O documento de visão descreve o problema a ser solucionado? (Produto)
+2.4. O documento de visão descreve os interessados (stakeholders e usuários) no produto e suas necessidades? (Produto)
+2.5. O documento de visão apresenta uma visão geral do produto? (Produto)
+2.6. O documento de visão define os requisitos (funcionais, não-funcionais etc.) e restrições técnicas do produto? (Produto)","Os livros da bibliografia básica da INF1027 são:
+
+1. **WAGNER, S.** *Software Product Quality Control*. Springer, 2013.
+2. **DELAMARO, M.E., MALDONADO, J.C., JINO, M.** *Introdução ao Teste de Software*. Elsevier, 2ª edição, 2016.
+3. **ANICHE, M.** *Effective Software Testing: A Developer's Guide*. Simon and Schuster, 2022.",,,
+a09,Qual a data de entrega do desafio e quantas pessoas compõem cada time?,Entrega em 25/11 (início das apresentações); times de 4 pessoas.,"[challenge-03] Atividades da aula de início do Challenge:
+- Parte 1 - Definição dos grupos: fornecer os nomes dos membros do grupo na planilha da turma (Turma A ou Turma B). Tempo: 6 minutos.
+- Parte 2 - Identificar perguntas norteadoras (Guiding Questions): identificar pelo menos 20 perguntas norteadoras. Tempo: 20 minutos.
+- Parte 3 - Categorizar e priorizar as perguntas.
+- Parte 4 - Atividades norteadoras (Guiding Activities): fornecer atividades norteadoras para responder cada pergunta. Dica: comece com um verbo no infinitivo, como Pesquisar, Entrevistar, Assistir, Ler etc.
+[challenge-01] Regras do Challenge (desafio) da disciplina:
+- Time de 4 pessoas.
+- Entregáveis: Documento CBL e Apresentação (PDF) no formato de 7 minutos.
+- A entrega será no Moodle.
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[visao-16] Exemplos de requisitos não-funcionais de desempenho:
+- RNF01-008: tempo médio de resposta de 2 segundos.
+- RNF01-009: tempo máximo de resposta (pico) de 10 segundos.
+- RNF01-010: vazão (throughput) acima de 50 requisições por segundo por máquina.
+- RNF01-011: atender a 450 mil visitantes únicos por dia.","Cada time é composto por **4 pessoas**.
+
+Não encontrei essa informação nos documentos da disciplina. O contexto indica apenas que a entrega será feita no Moodle, sem especificar a data.",,,
+a10,Que ferramentas são citadas para teste unitário e para teste de aceitação?,"Unitário: JUnit, DBUnit, TestNG (Java), NUnit (.NET), PhpUnit (PHP). Aceitação: Selenium IDE, Rational Functional Tester/Test Manager/Service Tester (IBM), SilkCentral Test Manager (Borland), Quality Center (HP) e SoapUI (WebServices).","[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[visao-08] Estrutura de um Plano de Teste:
+- Missão de Avaliação e Motivação dos Testes; Itens-alvo dos Testes; Resumo dos Testes Planejados; Abordagem dos Testes.
+- Técnicas e Tipos de Teste: Teste de Integridade de Dados e de Banco de Dados, Teste de Função, Teste de Ciclos de Negócios, Teste da Interface do Usuário, Determinação do Perfil de Desempenho, Teste de Carga, Teste de Stress, Teste de Volume, Teste de Segurança e de Controle de Acesso, Teste de Tolerância a Falhas e de Recuperação, Teste de Configuração, Teste de Instalação.
+- Produtos Liberados: Sumários de Avaliação de Testes, Relatórios da Cobertura de Teste, Relatórios da Qualidade Perceptível, Registros de Incidentes e Solicitações de Mudança, Conjunto de Testes de Regressão e Scripts de Teste de Suporte, Resultados Detalhados dos Testes, Matrizes de Rastreabilidade.
+- Necessidades Ambientais: Hardware Básico do Sistema, Elementos de Software Básicos do Ambiente de Teste, Ferramentas de Produtividade e de Suporte, Configurações do Ambiente de Teste.
+- Riscos, Dependências, Suposições e Restrições.
+[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.","O contexto cita ferramentas apenas para **teste de aceitação**:
+
+- **Web:** Selenium IDE
+- **IBM:** Rational Functional Tester, Rational Test Manager, Rational Service Tester
+- **Borland:** SilkCentral Test Manager
+- **HP:** Quality Center
+- **SoapUI:** para WebServices
+
+Para **teste de unidade**, o contexto não menciona nenhuma ferramenta. Ele apenas define o tipo de teste na lista de tipos de teste. Para essa informação, consulte o material da disciplina ou a bibliografia indicada.",,,
+a11,Que ferramentas são citadas para teste unitário e para teste de aceitação?,"Unitário: JUnit, DBUnit, TestNG (Java), NUnit (.NET), PhpUnit (PHP). Aceitação: Selenium IDE, Rational Functional Tester/Test Manager/Service Tester (IBM), SilkCentral Test Manager (Borland), Quality Center (HP) e SoapUI (WebServices).","[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[visao-08] Estrutura de um Plano de Teste:
+- Missão de Avaliação e Motivação dos Testes; Itens-alvo dos Testes; Resumo dos Testes Planejados; Abordagem dos Testes.
+- Técnicas e Tipos de Teste: Teste de Integridade de Dados e de Banco de Dados, Teste de Função, Teste de Ciclos de Negócios, Teste da Interface do Usuário, Determinação do Perfil de Desempenho, Teste de Carga, Teste de Stress, Teste de Volume, Teste de Segurança e de Controle de Acesso, Teste de Tolerância a Falhas e de Recuperação, Teste de Configuração, Teste de Instalação.
+- Produtos Liberados: Sumários de Avaliação de Testes, Relatórios da Cobertura de Teste, Relatórios da Qualidade Perceptível, Registros de Incidentes e Solicitações de Mudança, Conjunto de Testes de Regressão e Scripts de Teste de Suporte, Resultados Detalhados dos Testes, Matrizes de Rastreabilidade.
+- Necessidades Ambientais: Hardware Básico do Sistema, Elementos de Software Básicos do Ambiente de Teste, Ferramentas de Produtividade e de Suporte, Configurações do Ambiente de Teste.
+- Riscos, Dependências, Suposições e Restrições.
+[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.","Para **teste de aceitação**, o contexto cita as seguintes ferramentas:
+
+- **Web:** Selenium IDE
+- **IBM:** Rational Functional Tester, Rational Test Manager, Rational Service Tester
+- **Borland:** SilkCentral Test Manager
+- **HP:** Quality Center
+- **SoapUI:** para WebServices
+
+Para **teste de unidade**, não encontrei essa informação nos documentos da disciplina.",,,
+a12,O que acontece se eu faltar a P1?,"Sem justificativa plausível, a nota é zero; com justificativa, o aluno pode fazer a segunda chamada.","[intro-06] Avaliação da disciplina: 1 Prova (P1), 1 Desafio Maior (DM) e Nanochallenges e participação em aula (N&P).
+Critério de cálculo:
+- G1 = P1 * 0.8 + N&P * 0.2
+- G2 = DM * 0.75 + N&P * 0.25
+- Se G2 < 3, então MÉDIA = (G1 + (G2 * 3)) / 4
+Para ser aprovado o aluno deverá alcançar Grau Final >= 5.
+Faltou a P1: faltar a P1 sem justificativa plausível é zero; com justificativa, o aluno pode fazer a segunda chamada.
+[visao-16] Exemplos de requisitos não-funcionais de desempenho:
+- RNF01-008: tempo médio de resposta de 2 segundos.
+- RNF01-009: tempo máximo de resposta (pico) de 10 segundos.
+- RNF01-010: vazão (throughput) acima de 50 requisições por segundo por máquina.
+- RNF01-011: atender a 450 mil visitantes únicos por dia.
+[defeitos-03] Confiabilidade e Manutenibilidade - exemplos de medidas:
+- MTBF (mean time between failures): tempo médio entre falhas sucessivas.
+- MTTRc (mean time to recover): tempo médio requerido para repor o sistema em funcionamento correto (recuperar) após uma falha.
+- MTTRp (mean time to repair): tempo médio requerido do momento em que é observada uma falha até a versão corrigida do artefato estar disponível.
+- MTTEv (mean time to evolve): tempo médio requerido para evoluir ou adaptar o software após o registro de uma solicitação de alteração.
+[visao-09] Caso de Teste - estrutura geral:
+- ID: identificação única do caso de teste.
+- Descrição: breve e objetiva.
+- Pré-requisitos: necessários antes da execução do teste.
+- Entradas: dados de teste a serem passados ao sistema.
+- Passos: instruções de como realizar o teste.
+- Resultados esperados: como o sistema deve reagir de acordo com os passos do teste.
+- Resultados obtidos: como o sistema de fato reagiu.
+- Sucesso/Fracasso: resultado da comparação entre o resultado esperado e o obtido (em fila, bloqueado, em andamento, em alerta, fechado, não realizado etc.).","Se você faltar à P1, o resultado depende da justificativa:
+
+- **Sem justificativa plausível:** a P1 recebe **nota zero**. Como G1 = P1 × 0,8 + N&P × 0,2, sua média G1 fica limitada à parte da participação e dos nanochallenges (20%).
+- **Com justificativa plausível:** você pode fazer a **segunda chamada** da prova.
+
+Para a segunda chamada, procure o professor da disciplina e apresente sua justificativa.",,,
+a13,Qual é o limite de faltas para não ser reprovado por frequência?,NÃO CONSTA,"[visao-18] Problemas comuns na disciplina de testes:
+- Não levar em consideração o esforço de teste no planejamento.
+- Selecionar analistas de testes sem conhecimento do domínio.
+- Associar que testadores sempre são programadores.
+- Não ter um ambiente isolado para a realização dos testes (desenvolvimento, teste, homologação).
+- Não ter ou não conseguir uma massa de dados adequada para a realização dos testes.
+- Testar tudo; testar características, funcionalidades ou componentes de pouca relevância (falta de priorização).
+- Ter ferramentas adequadas para Model Based Test (MBT), por exemplo uma demonstração de MBT com o RSA-MDT.
+- Realizar apenas testes funcionais.
+- Colocar testes de stress, segurança e carga por último (ou tarde demais).
+- Não testar a especificação: requisitos incorretos geram sistemas incorretos e testes incorretos.
+- Não testar procedimentos de instalação.
+- Não priorizar áreas de risco.
+- Seguir cegamente um plano de testes.
+- Pensar que a equipe de testes é a única responsável por assegurar a qualidade.
+- Começar tarde demais.
+[visao-02] Por que testar? Para aumentar a qualidade dos produtos gerados, através da prevenção de defeitos, realização de testes e validações no desenvolvimento de software:
+- Garantir que o produto gerado atende às expectativas do cliente.
+- Garantir que o produto gerado atende às especificações (requisitos funcionais e não funcionais) do sistema.
+- Garantir que o produto gerado funciona corretamente no ambiente de produção.
+- Garantir que alterações realizadas no sistema e em seus componentes gerem os resultados esperados e não comprometam a integridade do sistema.
+- Reduzir ao máximo a incidência de defeitos nos produtos entregues, bem como a sua severidade.
+Também serve para verificar a qualidade dos produtos entregues por terceiros.
+[garantia-09] Gerência da Validação. Exemplos de medidas para gerir o processo de validação (Rocha et al., 2012):
+- Densidade de defeitos identificados em avaliação de requisitos
+- Esforço de retrabalho para correção de defeitos nos requisitos
+- Densidade de defeitos identificados nos testes de homologação
+- Esforço de retrabalho para a correção de defeitos em testes de homologação
+[visao-03] Quando testar? Testes devem ser realizados no decorrer do ciclo de desenvolvimento; não é uma boa prática realizar testes somente após o desenvolvimento. Deve-se integrar testes no decorrer do desenvolvimento: na abordagem ágil, testes são realizados antes da escrita do código de negócio, e podem ser usados mapas mentais nos testes ágeis.",Não encontrei essa informação nos documentos da disciplina.,,,
+a14,Como é calculado o G1?,G1 = P1 * 0.8 + N&P * 0.2 (N&P = nanochallenges e participação em aula).,"[intro-06] Avaliação da disciplina: 1 Prova (P1), 1 Desafio Maior (DM) e Nanochallenges e participação em aula (N&P).
+Critério de cálculo:
+- G1 = P1 * 0.8 + N&P * 0.2
+- G2 = DM * 0.75 + N&P * 0.25
+- Se G2 < 3, então MÉDIA = (G1 + (G2 * 3)) / 4
+Para ser aprovado o aluno deverá alcançar Grau Final >= 5.
+Faltou a P1: faltar a P1 sem justificativa plausível é zero; com justificativa, o aluno pode fazer a segunda chamada.
+[caixapreta-04] Análise do Valor Limite: o comportamento nos limites de uma partição de equivalência é onde existe maior probabilidade de estar incorreto. Portanto, limites são áreas onde testes estão mais propensos a indicar defeitos. Os valores limites de uma partição são seu máximo e seu mínimo. Esta técnica é muitas vezes considerada uma extensão da partição de equivalência e pode ser aplicada para entradas manuais como, por exemplo, em escalas de tempo.
+Exemplo de limites por partição: para uma partição válida de 1 a 12, os valores ...-2, -1, 0 formam a partição inválida 1, de 1 a 12 a partição válida, e 13, 14, 15... a partição inválida 2.
+[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[garantia-03] Gerência da Qualidade de Software. A norma ISO 25001 tem como propósito a gerência da qualidade de produtos com base em requisitos de qualidade e avaliação.
+Gerenciamento da qualidade envolve (Tian, 2005) (Wagner, 2013):
+- Definir objetivos específicos de qualidade.
+- Planejar uma estratégia de qualidade: 1) selecionar métodos apropriados de garantia da qualidade, verificação e validação (V&V); 2) selecionar medidas apropriadas para permitir a avaliação da qualidade.
+- Avaliar e controlar a qualidade.
+A Gerência da Qualidade se divide em três partes: Garantia da Qualidade, Verificação e Validação.","Com base no critério de cálculo da disciplina, o G1 é calculado assim:
+
+**G1 = P1 × 0,8 + N&P × 0,2**
+
+Ou seja, G1 é a média ponderada entre a nota da Prova 1 (peso 0,8) e a nota de Nanochallenges e participação em aula (N&P, peso 0,2).",,,
+a15,O que é a análise do valor limite?,"Técnica caixa preta que testa os limites (máximo e mínimo) das partições de equivalência, pois é nos limites que há maior probabilidade de comportamento incorreto; é considerada uma extensão da partição de equivalência.","[caixapreta-04] Análise do Valor Limite: o comportamento nos limites de uma partição de equivalência é onde existe maior probabilidade de estar incorreto. Portanto, limites são áreas onde testes estão mais propensos a indicar defeitos. Os valores limites de uma partição são seu máximo e seu mínimo. Esta técnica é muitas vezes considerada uma extensão da partição de equivalência e pode ser aplicada para entradas manuais como, por exemplo, em escalas de tempo.
+Exemplo de limites por partição: para uma partição válida de 1 a 12, os valores ...-2, -1, 0 formam a partição inválida 1, de 1 a 12 a partição válida, e 13, 14, 15... a partição inválida 2.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[caixapreta-01] Técnicas baseadas em especificação ou caixa preta: Partição de equivalência, Análise do valor limite, Tabela de decisão, Teste de transição de estados e Teste de caso de uso.
+[visao-15] Riscos verificados com testes de desempenho:
+- Capacidade: o sistema atende ao volume demandado em operação?
+- Componente: o componente atende aos requisitos de desempenho? Está contribuindo para o não cumprimento de um requisito de desempenho?
+- Longevidade: o desempenho será consistente e aceitável em 1 ano?
+- Comparação: como o desempenho vem evoluindo no tempo?
+- Carga: quantos usuários a aplicação suporta adequadamente? Até quando a base de dados pode crescer? Quando a infraestrutura de rede irá sobrecarregar?
+- Validação: alguma SLA será violada com esta nova release do software?","A análise do valor limite é uma técnica de teste baseada em especificação (caixa preta). Ela parte do princípio de que o comportamento nos limites de uma partição de equivalência é onde existe maior probabilidade de erro, ou seja, onde os testes têm mais chance de revelar defeitos. Os valores limites de uma partição são seu máximo e seu mínimo.
+
+Segundo o material, essa técnica é muitas vezes considerada uma extensão da partição de equivalência e pode ser aplicada a entradas manuais, como escalas de tempo.
+
+Exemplo do material: para uma partição válida de 1 a 12, os valores ...-2, -1, 0 formam a partição inválida 1; de 1 a 12 forma a partição válida; e 13, 14, 15... formam a partição inválida 2.",,,
+a16,Em que data é a P1?,14/10 (a revisão para a P1 é em 07/10).,"[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[intro-03] Ementa detalhada (parte 1):
+- Introdução do curso e dinâmica Speed Dating
+- Entendendo sobre qualidade de produto de software e dinâmica Brainwriting
+- CBL
+- Processo de Software e Requisitos Funcionais e não funcionais
+- Verificação e Validação
+- Teste de Software: Conceitos e Definições
+- 02/09 - Lab de Testes Unitários com Nanodesafio
+- Aula no lab de Testes Funcionais
+- Técnicas de teste: parte 1 e parte 2
+- Planejamento de teste: parte 1 e parte 2 no lab
+- Roteirização de Teste com nanochallenge: parte 1 e 2
+- 07/10 - Revisão para a P1
+- 14/10 - P1
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[intro-06] Avaliação da disciplina: 1 Prova (P1), 1 Desafio Maior (DM) e Nanochallenges e participação em aula (N&P).
+Critério de cálculo:
+- G1 = P1 * 0.8 + N&P * 0.2
+- G2 = DM * 0.75 + N&P * 0.25
+- Se G2 < 3, então MÉDIA = (G1 + (G2 * 3)) / 4
+Para ser aprovado o aluno deverá alcançar Grau Final >= 5.
+Faltou a P1: faltar a P1 sem justificativa plausível é zero; com justificativa, o aluno pode fazer a segunda chamada.","A P1 está marcada para **14/10**, conforme a ementa detalhada da disciplina.",,,
+a17,Quais são as variações do teste de desempenho e que riscos ele ajuda a verificar?,"Variações: teste de carga, de stress e de configuração. Riscos: capacidade, componente, longevidade, comparação, carga e validação (violação de SLA).","[visao-15] Riscos verificados com testes de desempenho:
+- Capacidade: o sistema atende ao volume demandado em operação?
+- Componente: o componente atende aos requisitos de desempenho? Está contribuindo para o não cumprimento de um requisito de desempenho?
+- Longevidade: o desempenho será consistente e aceitável em 1 ano?
+- Comparação: como o desempenho vem evoluindo no tempo?
+- Carga: quantos usuários a aplicação suporta adequadamente? Até quando a base de dados pode crescer? Quando a infraestrutura de rede irá sobrecarregar?
+- Validação: alguma SLA será violada com esta nova release do software?
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[visao-08] Estrutura de um Plano de Teste:
+- Missão de Avaliação e Motivação dos Testes; Itens-alvo dos Testes; Resumo dos Testes Planejados; Abordagem dos Testes.
+- Técnicas e Tipos de Teste: Teste de Integridade de Dados e de Banco de Dados, Teste de Função, Teste de Ciclos de Negócios, Teste da Interface do Usuário, Determinação do Perfil de Desempenho, Teste de Carga, Teste de Stress, Teste de Volume, Teste de Segurança e de Controle de Acesso, Teste de Tolerância a Falhas e de Recuperação, Teste de Configuração, Teste de Instalação.
+- Produtos Liberados: Sumários de Avaliação de Testes, Relatórios da Cobertura de Teste, Relatórios da Qualidade Perceptível, Registros de Incidentes e Solicitações de Mudança, Conjunto de Testes de Regressão e Scripts de Teste de Suporte, Resultados Detalhados dos Testes, Matrizes de Rastreabilidade.
+- Necessidades Ambientais: Hardware Básico do Sistema, Elementos de Software Básicos do Ambiente de Teste, Ferramentas de Produtividade e de Suporte, Configurações do Ambiente de Teste.
+- Riscos, Dependências, Suposições e Restrições.","## Variações do Teste de Desempenho
+
+Segundo o material da disciplina, o Teste de Desempenho tem três variações:
+
+- **Teste de Carga:** avalia o comportamento do sistema conforme aumentam o número de usuários, o número de transações e o tamanho da base de dados.
+- **Teste de Stress:** submete o sistema a condições extremas, como memória limitada, espaço em disco insuficiente, falhas em servidores ou um número muito alto de usuários.
+- **Teste de Configuração:** determina as configurações mínima e ótima de hardware e software, avalia o efeito de adicionar ou modificar recursos (memória, disco, CPU e rede) e testa padrões de compatibilidade.
+
+## Riscos verificados com testes de desempenho
+
+Os testes de desempenho ajudam a responder às seguintes perguntas:
+
+- **Capacidade:** o sistema atende ao volume demandado em operação?
+- **Componente:** algum componente está contribuindo para o não cumprimento de um requisito de desempenho?
+- **Longevidade:** o desempenho continuará consistente e aceitável em 1 ano?
+- **Comparação:** como o desempenho evoluiu ao longo do tempo?
+- **Carga:** quantos usuários a aplicação suporta adequadamente, até quando a base de dados pode crescer e quando a infraestrutura de rede vai sobrecarregar?
+- **Validação:** alguma SLA será violada com a nova release do software?",,,
+a18,"Segundo o estudo do Google citado na aula, que porcentagem dos testes pode ser flaky?",Aproximadamente 16% (estudo do Google de 2016).,"[solid-13] FIRST - Repetível (Repeatable): os testes devem ser capazes de ser executados repetidas vezes, em qualquer ambiente, sem variação dos seus resultados. Testes que ora passam e ora falham são chamados de Flaky (alarme falso). Segundo um estudo do Google de 2016, aproximadamente 16% dos testes são passíveis de ser Flaky Tests (fonte: https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html).
+[visao-03] Quando testar? Testes devem ser realizados no decorrer do ciclo de desenvolvimento; não é uma boa prática realizar testes somente após o desenvolvimento. Deve-se integrar testes no decorrer do desenvolvimento: na abordagem ágil, testes são realizados antes da escrita do código de negócio, e podem ser usados mapas mentais nos testes ágeis.
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-18] Problemas comuns na disciplina de testes:
+- Não levar em consideração o esforço de teste no planejamento.
+- Selecionar analistas de testes sem conhecimento do domínio.
+- Associar que testadores sempre são programadores.
+- Não ter um ambiente isolado para a realização dos testes (desenvolvimento, teste, homologação).
+- Não ter ou não conseguir uma massa de dados adequada para a realização dos testes.
+- Testar tudo; testar características, funcionalidades ou componentes de pouca relevância (falta de priorização).
+- Ter ferramentas adequadas para Model Based Test (MBT), por exemplo uma demonstração de MBT com o RSA-MDT.
+- Realizar apenas testes funcionais.
+- Colocar testes de stress, segurança e carga por último (ou tarde demais).
+- Não testar a especificação: requisitos incorretos geram sistemas incorretos e testes incorretos.
+- Não testar procedimentos de instalação.
+- Não priorizar áreas de risco.
+- Seguir cegamente um plano de testes.
+- Pensar que a equipe de testes é a única responsável por assegurar a qualidade.
+- Começar tarde demais.","Segundo o estudo do Google de 2016 citado no material, aproximadamente **16% dos testes** são passíveis de ser Flaky Tests.",,,
+a19,O que é a pirâmide de testes?,NÃO CONSTA,"[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[visao-08] Estrutura de um Plano de Teste:
+- Missão de Avaliação e Motivação dos Testes; Itens-alvo dos Testes; Resumo dos Testes Planejados; Abordagem dos Testes.
+- Técnicas e Tipos de Teste: Teste de Integridade de Dados e de Banco de Dados, Teste de Função, Teste de Ciclos de Negócios, Teste da Interface do Usuário, Determinação do Perfil de Desempenho, Teste de Carga, Teste de Stress, Teste de Volume, Teste de Segurança e de Controle de Acesso, Teste de Tolerância a Falhas e de Recuperação, Teste de Configuração, Teste de Instalação.
+- Produtos Liberados: Sumários de Avaliação de Testes, Relatórios da Cobertura de Teste, Relatórios da Qualidade Perceptível, Registros de Incidentes e Solicitações de Mudança, Conjunto de Testes de Regressão e Scripts de Teste de Suporte, Resultados Detalhados dos Testes, Matrizes de Rastreabilidade.
+- Necessidades Ambientais: Hardware Básico do Sistema, Elementos de Software Básicos do Ambiente de Teste, Ferramentas de Produtividade e de Suporte, Configurações do Ambiente de Teste.
+- Riscos, Dependências, Suposições e Restrições.",Não encontrei essa informação nos documentos da disciplina.,,,
+a20,Quais são as técnicas de teste caixa branca vistas na disciplina?,NÃO CONSTA,"[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.
+[caixapreta-01] Técnicas baseadas em especificação ou caixa preta: Partição de equivalência, Análise do valor limite, Tabela de decisão, Teste de transição de estados e Teste de caso de uso.
+[visao-17] Processo de teste, de forma geral: Planejar Teste -> Projetar Teste -> Executar Teste -> Analisar Resultado. Se há defeito, passa-se a Gerenciar Resultado.
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.",Não encontrei essa informação nos documentos da disciplina.,,,
+a21,Quem é o professor da INF1027 e qual o e-mail dele?,"Andrew Diniz da Costa, DSc., do Departamento de Informática da PUC-Rio; e-mail andrew@puc-rio.br.","[intro-01] Disciplina Teste e Medição de Software (INF1027), PUC-Rio. Professor: Andrew Diniz da Costa, DSc., do Departamento de Informática (andrew@puc-rio.br).
+O professor é professor de Engenharia de Software do DI da PUC-Rio, orientador de alunos de graduação, pesquisador e coordenador de projetos acadêmicos e de pesquisa no Laboratório de Engenharia de Software (LES), consultor educacional no ECOA e tem mais de 25 anos de experiência com projetos de desenvolvimento.
+[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[challenge-01] Regras do Challenge (desafio) da disciplina:
+- Time de 4 pessoas.
+- Entregáveis: Documento CBL e Apresentação (PDF) no formato de 7 minutos.
+- A entrega será no Moodle.
+[visao-06] Papéis envolvidos em testes. Dedicação: Analista de Teste, Testador e Consultor (de ferramentas e de processos). Apoio: DBA ou AD, Técnico / Infraestrutura, Desenvolvedor e Gerente de Projeto.
+Artefatos de teste: Plano de Teste, Caso de teste, Scripts de Teste Automatizado, Matriz de rastreabilidade, Logs de Execução e Registro de Problema.","O professor da INF1027 é Andrew Diniz da Costa, DSc., do Departamento de Informática da PUC-Rio, e o e-mail dele é andrew@puc-rio.br.",,,
+a22,Qual é o limite de faltas para não ser reprovado por frequência?,NÃO CONSTA,"[visao-18] Problemas comuns na disciplina de testes:
+- Não levar em consideração o esforço de teste no planejamento.
+- Selecionar analistas de testes sem conhecimento do domínio.
+- Associar que testadores sempre são programadores.
+- Não ter um ambiente isolado para a realização dos testes (desenvolvimento, teste, homologação).
+- Não ter ou não conseguir uma massa de dados adequada para a realização dos testes.
+- Testar tudo; testar características, funcionalidades ou componentes de pouca relevância (falta de priorização).
+- Ter ferramentas adequadas para Model Based Test (MBT), por exemplo uma demonstração de MBT com o RSA-MDT.
+- Realizar apenas testes funcionais.
+- Colocar testes de stress, segurança e carga por último (ou tarde demais).
+- Não testar a especificação: requisitos incorretos geram sistemas incorretos e testes incorretos.
+- Não testar procedimentos de instalação.
+- Não priorizar áreas de risco.
+- Seguir cegamente um plano de testes.
+- Pensar que a equipe de testes é a única responsável por assegurar a qualidade.
+- Começar tarde demais.
+[visao-02] Por que testar? Para aumentar a qualidade dos produtos gerados, através da prevenção de defeitos, realização de testes e validações no desenvolvimento de software:
+- Garantir que o produto gerado atende às expectativas do cliente.
+- Garantir que o produto gerado atende às especificações (requisitos funcionais e não funcionais) do sistema.
+- Garantir que o produto gerado funciona corretamente no ambiente de produção.
+- Garantir que alterações realizadas no sistema e em seus componentes gerem os resultados esperados e não comprometam a integridade do sistema.
+- Reduzir ao máximo a incidência de defeitos nos produtos entregues, bem como a sua severidade.
+Também serve para verificar a qualidade dos produtos entregues por terceiros.
+[garantia-09] Gerência da Validação. Exemplos de medidas para gerir o processo de validação (Rocha et al., 2012):
+- Densidade de defeitos identificados em avaliação de requisitos
+- Esforço de retrabalho para correção de defeitos nos requisitos
+- Densidade de defeitos identificados nos testes de homologação
+- Esforço de retrabalho para a correção de defeitos em testes de homologação
+[visao-03] Quando testar? Testes devem ser realizados no decorrer do ciclo de desenvolvimento; não é uma boa prática realizar testes somente após o desenvolvimento. Deve-se integrar testes no decorrer do desenvolvimento: na abordagem ágil, testes são realizados antes da escrita do código de negócio, e podem ser usados mapas mentais nos testes ágeis.","O contexto que tenho não traz informações sobre frequência ou limite de faltas, então não consigo informar o número exato para esta disciplina.
+
+Para essa resposta, você pode consultar:
+
+- **O plano de ensino ou o guia da disciplina**, que costuma trazer as regras de frequência e avaliação.
+- **O AVA/Moodle da disciplina** ou o material publicado pelo professor.
+- **O professor responsável**, que pode confirmar o critério.
+- **O regulamento de graduação da sua instituição**, que define as regras gerais de frequência.
+
+Como referência geral, a legislação brasileira de ensino superior exige frequência mínima de 75% das atividades, o que costuma corresponder a um limite de faltas em torno de 25% da carga horária. Cada instituição, porém, pode ter regras próprias, então confirme antes de considerar esse valor como válido para a INF1027.",,,
+a23,Em que sala e horário são as aulas da INF1027?,NÃO CONSTA,"[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[intro-01] Disciplina Teste e Medição de Software (INF1027), PUC-Rio. Professor: Andrew Diniz da Costa, DSc., do Departamento de Informática (andrew@puc-rio.br).
+O professor é professor de Engenharia de Software do DI da PUC-Rio, orientador de alunos de graduação, pesquisador e coordenador de projetos acadêmicos e de pesquisa no Laboratório de Engenharia de Software (LES), consultor educacional no ECOA e tem mais de 25 anos de experiência com projetos de desenvolvimento.
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[challenge-03] Atividades da aula de início do Challenge:
+- Parte 1 - Definição dos grupos: fornecer os nomes dos membros do grupo na planilha da turma (Turma A ou Turma B). Tempo: 6 minutos.
+- Parte 2 - Identificar perguntas norteadoras (Guiding Questions): identificar pelo menos 20 perguntas norteadoras. Tempo: 20 minutos.
+- Parte 3 - Categorizar e priorizar as perguntas.
+- Parte 4 - Atividades norteadoras (Guiding Activities): fornecer atividades norteadoras para responder cada pergunta. Dica: comece com um verbo no infinitivo, como Pesquisar, Entrevistar, Assistir, Ler etc.",Não encontrei essa informação nos documentos da disciplina.,,,
+a24,Quais dias são feriado sem aula?,"07/09 (Independência do Brasil), 12/10 (Nossa Senhora Aparecida) e 02/11 (Finados).","[challenge-03] Atividades da aula de início do Challenge:
+- Parte 1 - Definição dos grupos: fornecer os nomes dos membros do grupo na planilha da turma (Turma A ou Turma B). Tempo: 6 minutos.
+- Parte 2 - Identificar perguntas norteadoras (Guiding Questions): identificar pelo menos 20 perguntas norteadoras. Tempo: 20 minutos.
+- Parte 3 - Categorizar e priorizar as perguntas.
+- Parte 4 - Atividades norteadoras (Guiding Activities): fornecer atividades norteadoras para responder cada pergunta. Dica: comece com um verbo no infinitivo, como Pesquisar, Entrevistar, Assistir, Ler etc.
+[challenge-01] Regras do Challenge (desafio) da disciplina:
+- Time de 4 pessoas.
+- Entregáveis: Documento CBL e Apresentação (PDF) no formato de 7 minutos.
+- A entrega será no Moodle.
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.","Os feriados sem aula em 2026 são:
+
+- **07/09**: Independência do Brasil
+- **12/10**: Nossa Senhora Aparecida
+- **02/11**: Finados",,,
+a25,Quais são as naturezas de defeitos em documentos de requisitos segundo a taxonomia de Shull?,"Omissão, ambiguidade, inconsistência, fato incorreto e informação estranha.","[defeitos-06] Taxonomia definida por Shull (1998), a partir do padrão IEEE 830 (1998), para a natureza de defeitos em documentos de requisitos:
+- Omissão: informação necessária não incluída.
+- Ambiguidade: informação passível de ter múltiplas interpretações.
+- Inconsistência: informações conflitantes.
+- Fato Incorreto: informação que não é verdadeira para as condições especificadas.
+- Informação Estranha: informação desnecessária.
+Atividade da aula: identificar um exemplo prático comum para cada natureza de defeito.
+[visao-10] Registro de problema. Campos:
+- Artefato (construto): nome, versão, data, quem e como (caso de teste, uso ou outros, por exemplo o desenvolvimento de outro artefato).
+- Tipo do problema reportado: código, documentação, especificação (design) ou sugestão.
+- Severidade: possíveis danos provocados pelo problema. É possível continuar a usar? Sim, se evitar a região problemática; sim, usando outra sequência de trabalho; sim, se desprezar alguns resultados; sim, pois somente incomoda.
+- É reprodutível? Identificação do problema; descrição do problema e como produzi-lo.
+- Sugestão de solução.
+[garantia-05] Recorte de um checklist de garantia da qualidade. Colunas: Fase, Questão, Foco (Processo ou Produto), Sim, Não. Exemplos de questões da Fase de Levantamento:
+1. Foram realizadas reuniões para o levantamento de requisitos? (Processo)
+1.1. Foram gerados documentos de controle, como atas, após as reuniões? (Processo)
+1.2. Os documentos gerados foram assinados por todos os participantes da(s) reunião(ões)? (Produto)
+2. O documento de visão foi criado? (Processo)
+2.2. O escopo do documento de visão está definido no mesmo? (Produto)
+2.3. O documento de visão descreve o problema a ser solucionado? (Produto)
+2.4. O documento de visão descreve os interessados (stakeholders e usuários) no produto e suas necessidades? (Produto)
+2.5. O documento de visão apresenta uma visão geral do produto? (Produto)
+2.6. O documento de visão define os requisitos (funcionais, não-funcionais etc.) e restrições técnicas do produto? (Produto)
+[defeitos-01] Diferença entre Erro, Defeito e Falha:
+- Erro (universo da informação): desvio da especificação realizado após a definição dos requisitos. O valor atribuído (desvio) é diferente do valor esperado (requisito).
+- Defeito (universo físico): o erro irá introduzir um defeito no código de software. A manifestação de um erro pode ser chamada de defeito; com isso temos a produção de um bug no código ou na documentação do sistema.
+- Falha (universo do usuário): problema encontrado ao executar o software. A falha é um evento: é um software que não cumpriu o seu propósito.","Segundo a taxonomia de Shull (1998), baseada no padrão IEEE 830 (1998), os defeitos em documentos de requisitos podem ser de cinco naturezas:
+
+1. **Omissão:** informação necessária que não foi incluída no documento.
+2. **Ambiguidade:** informação que pode ter mais de uma interpretação.
+3. **Inconsistência:** informações que estão em conflito entre si.
+4. **Fato Incorreto:** informação que não é verdadeira para as condições especificadas.
+5. **Informação Estranha:** informação desnecessária no documento.
+
+Para a atividade da aula, você deve identificar um exemplo prático comum para cada uma dessas naturezas.",,,
+a26,O que acontece se eu faltar a P1?,"Sem justificativa plausível, a nota é zero; com justificativa, o aluno pode fazer a segunda chamada.","[intro-06] Avaliação da disciplina: 1 Prova (P1), 1 Desafio Maior (DM) e Nanochallenges e participação em aula (N&P).
+Critério de cálculo:
+- G1 = P1 * 0.8 + N&P * 0.2
+- G2 = DM * 0.75 + N&P * 0.25
+- Se G2 < 3, então MÉDIA = (G1 + (G2 * 3)) / 4
+Para ser aprovado o aluno deverá alcançar Grau Final >= 5.
+Faltou a P1: faltar a P1 sem justificativa plausível é zero; com justificativa, o aluno pode fazer a segunda chamada.
+[visao-16] Exemplos de requisitos não-funcionais de desempenho:
+- RNF01-008: tempo médio de resposta de 2 segundos.
+- RNF01-009: tempo máximo de resposta (pico) de 10 segundos.
+- RNF01-010: vazão (throughput) acima de 50 requisições por segundo por máquina.
+- RNF01-011: atender a 450 mil visitantes únicos por dia.
+[defeitos-03] Confiabilidade e Manutenibilidade - exemplos de medidas:
+- MTBF (mean time between failures): tempo médio entre falhas sucessivas.
+- MTTRc (mean time to recover): tempo médio requerido para repor o sistema em funcionamento correto (recuperar) após uma falha.
+- MTTRp (mean time to repair): tempo médio requerido do momento em que é observada uma falha até a versão corrigida do artefato estar disponível.
+- MTTEv (mean time to evolve): tempo médio requerido para evoluir ou adaptar o software após o registro de uma solicitação de alteração.
+[visao-09] Caso de Teste - estrutura geral:
+- ID: identificação única do caso de teste.
+- Descrição: breve e objetiva.
+- Pré-requisitos: necessários antes da execução do teste.
+- Entradas: dados de teste a serem passados ao sistema.
+- Passos: instruções de como realizar o teste.
+- Resultados esperados: como o sistema deve reagir de acordo com os passos do teste.
+- Resultados obtidos: como o sistema de fato reagiu.
+- Sucesso/Fracasso: resultado da comparação entre o resultado esperado e o obtido (em fila, bloqueado, em andamento, em alerta, fechado, não realizado etc.).","Se você faltar à P1 **sem justificativa plausível**, a nota da prova é **zero**. Se houver **justificativa**, você pode fazer a **segunda chamada**.",,,
+a27,Quais são as naturezas de defeitos em documentos de requisitos segundo a taxonomia de Shull?,"Omissão, ambiguidade, inconsistência, fato incorreto e informação estranha.","[defeitos-06] Taxonomia definida por Shull (1998), a partir do padrão IEEE 830 (1998), para a natureza de defeitos em documentos de requisitos:
+- Omissão: informação necessária não incluída.
+- Ambiguidade: informação passível de ter múltiplas interpretações.
+- Inconsistência: informações conflitantes.
+- Fato Incorreto: informação que não é verdadeira para as condições especificadas.
+- Informação Estranha: informação desnecessária.
+Atividade da aula: identificar um exemplo prático comum para cada natureza de defeito.
+[visao-10] Registro de problema. Campos:
+- Artefato (construto): nome, versão, data, quem e como (caso de teste, uso ou outros, por exemplo o desenvolvimento de outro artefato).
+- Tipo do problema reportado: código, documentação, especificação (design) ou sugestão.
+- Severidade: possíveis danos provocados pelo problema. É possível continuar a usar? Sim, se evitar a região problemática; sim, usando outra sequência de trabalho; sim, se desprezar alguns resultados; sim, pois somente incomoda.
+- É reprodutível? Identificação do problema; descrição do problema e como produzi-lo.
+- Sugestão de solução.
+[garantia-05] Recorte de um checklist de garantia da qualidade. Colunas: Fase, Questão, Foco (Processo ou Produto), Sim, Não. Exemplos de questões da Fase de Levantamento:
+1. Foram realizadas reuniões para o levantamento de requisitos? (Processo)
+1.1. Foram gerados documentos de controle, como atas, após as reuniões? (Processo)
+1.2. Os documentos gerados foram assinados por todos os participantes da(s) reunião(ões)? (Produto)
+2. O documento de visão foi criado? (Processo)
+2.2. O escopo do documento de visão está definido no mesmo? (Produto)
+2.3. O documento de visão descreve o problema a ser solucionado? (Produto)
+2.4. O documento de visão descreve os interessados (stakeholders e usuários) no produto e suas necessidades? (Produto)
+2.5. O documento de visão apresenta uma visão geral do produto? (Produto)
+2.6. O documento de visão define os requisitos (funcionais, não-funcionais etc.) e restrições técnicas do produto? (Produto)
+[defeitos-01] Diferença entre Erro, Defeito e Falha:
+- Erro (universo da informação): desvio da especificação realizado após a definição dos requisitos. O valor atribuído (desvio) é diferente do valor esperado (requisito).
+- Defeito (universo físico): o erro irá introduzir um defeito no código de software. A manifestação de um erro pode ser chamada de defeito; com isso temos a produção de um bug no código ou na documentação do sistema.
+- Falha (universo do usuário): problema encontrado ao executar o software. A falha é um evento: é um software que não cumpriu o seu propósito.","Segundo a taxonomia de Shull (1998), baseada no padrão IEEE 830 (1998), as naturezas de defeitos em documentos de requisitos são:
+
+1. **Omissão:** informação necessária não incluída.
+2. **Ambiguidade:** informação passível de ter múltiplas interpretações.
+3. **Inconsistência:** informações conflitantes.
+4. **Fato Incorreto:** informação que não é verdadeira para as condições especificadas.
+5. **Informação Estranha:** informação desnecessária.",,,
+a28,"Segundo o estudo do Google citado na aula, que porcentagem dos testes pode ser flaky?",Aproximadamente 16% (estudo do Google de 2016).,"[solid-13] FIRST - Repetível (Repeatable): os testes devem ser capazes de ser executados repetidas vezes, em qualquer ambiente, sem variação dos seus resultados. Testes que ora passam e ora falham são chamados de Flaky (alarme falso). Segundo um estudo do Google de 2016, aproximadamente 16% dos testes são passíveis de ser Flaky Tests (fonte: https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html).
+[visao-03] Quando testar? Testes devem ser realizados no decorrer do ciclo de desenvolvimento; não é uma boa prática realizar testes somente após o desenvolvimento. Deve-se integrar testes no decorrer do desenvolvimento: na abordagem ágil, testes são realizados antes da escrita do código de negócio, e podem ser usados mapas mentais nos testes ágeis.
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-18] Problemas comuns na disciplina de testes:
+- Não levar em consideração o esforço de teste no planejamento.
+- Selecionar analistas de testes sem conhecimento do domínio.
+- Associar que testadores sempre são programadores.
+- Não ter um ambiente isolado para a realização dos testes (desenvolvimento, teste, homologação).
+- Não ter ou não conseguir uma massa de dados adequada para a realização dos testes.
+- Testar tudo; testar características, funcionalidades ou componentes de pouca relevância (falta de priorização).
+- Ter ferramentas adequadas para Model Based Test (MBT), por exemplo uma demonstração de MBT com o RSA-MDT.
+- Realizar apenas testes funcionais.
+- Colocar testes de stress, segurança e carga por último (ou tarde demais).
+- Não testar a especificação: requisitos incorretos geram sistemas incorretos e testes incorretos.
+- Não testar procedimentos de instalação.
+- Não priorizar áreas de risco.
+- Seguir cegamente um plano de testes.
+- Pensar que a equipe de testes é a única responsável por assegurar a qualidade.
+- Começar tarde demais.","Segundo o estudo do Google de 2016 citado na aula, aproximadamente **16% dos testes** são passíveis de serem *Flaky Tests* (testes que ora passam e ora falham, gerando alarmes falsos). Isso vai contra o princípio FIRST de que os testes devem ser repetíveis, ou seja, produzir o mesmo resultado em qualquer ambiente e em todas as execuções.",,,
+a29,Uma God class viola qual princípio SOLID e pertence a qual categoria de code smell?,Viola o Princípio da Responsabilidade Única (SRP) e é um sintoma de Bloaters (inchaços).,"[solid-02] Code Smells mais comuns: Bloaters (inchaços), Object-Orientation Abusers (abusadores de orientação a objetos), Change Preventers (preventores de mudança), Dispensables (dispensáveis) e Couplers (acopladores).
+- Bloaters: quando um código cresce demais, já que as suas responsabilidades não foram bem definidas durante o seu planejamento; ocorre quando o código consome responsabilidades de outras classes; aparecimento de God classes.
+- Object-Orientation Abusers: violação da orientação a objetos. A aplicação inadequada, total ou parcial, de herança, polimorfismo ou encapsulamento pode provocar problemas no código. Dica: repare se o código tem muitos ifs ou switches complexos.
+[solid-06] Princípio da Responsabilidade Única (SRP): uma classe deve ter um, e somente um, motivo para mudar. Evitar ""God class""; cada classe cuida da sua responsabilidade.
+Consequências da violação do princípio da responsabilidade única:
+- Falta de coesão: uma classe não deve assumir responsabilidades que não são suas.
+- Alto acoplamento: mais responsabilidades geram um maior nível de dependência, deixando o sistema engessado e frágil para alterações.
+- Dificuldades na implementação de testes automatizados.
+- Dificuldades para reaproveitar o código.
+[solid-01] O que é Code Smell? Code Smell (cheiro de código) é qualquer característica no código-fonte de um programa que possivelmente indica um problema mais profundo. Code Smells não são bugs, contudo indicam pontos fracos que podem ocasionar falhas no presente ou no futuro (Fonte: Martin Fowler, ""Refactoring: improving the design of existing code"").
+Prevenção: o melhor é prevenir. O problema mais profundo pode ser descoberto por meio de ciclos curtos de feedback, observando o design para examinar se há novos Code Smells espalhados.
+[solid-04] Atividade 1 de Code Smell: melhorar um código proposto aplicando boas práticas de POO, pensando em facilitar manutenção, evolução de código e reuso. O código tem as classes Chocolate (titulo, marca, descricao, niveldeAmargor, peso) e Camisa (titulo, marca, descricao, tamanho, materialUsado), e a classe Carrinho, com um comentário longo, uma lista separada para camisas e outra para chocolates, um atributo x não usado e os métodos adicionarCamisa e adicionarChocolate.","Uma **God class** viola o **Princípio da Responsabilidade Única (SRP)**, que é o ""S"" do SOLID. Esse princípio diz que uma classe deve ter um, e somente um, motivo para mudar.
+
+Ela pertence à categoria **Bloaters** (inchaços), que são code smells em que o código cresce demais porque as responsabilidades não foram bem definidas no planejamento. A God class costuma consumir responsabilidades de outras classes.",,,
+a30,Quais são os livros da bibliografia básica?,"Wagner, Software Product Quality Control (Springer, 2013); Delamaro, Maldonado e Jino, Introdução ao Teste de Software (Elsevier, 2ª ed., 2016); Aniche, Effective Software Testing: A Developer's Guide (2022).","[intro-08] Bibliografia básica:
+- WAGNER, S., ""Software Product Quality Control"". Springer, 2013.
+- DELAMARO, M.E., MALDONADO, J.C., JINO, M., ""Introdução ao Teste de Software"". Elsevier, 2ª edição, 2016.
+- ANICHE, M., ""Effective Software Testing: A Developer's Guide"". Simon and Schuster, 2022.
+Bibliografia complementar:
+- FENTON, N.E., BIEMAN, J., ""Software Metrics: A Rigorous and Practical Approach"". CRC, 3ª edição, 2014.
+- MYERS, G., BADGETT, T., THOMAS, T., SANDLER, C., ""The Art of Software Testing"". Wiley, 3ª edição, 2012.
+- TIAN, J., ""Software Quality Engineering"". Wiley-Interscience, 2005.
+- VINCENZI, A.M.R. et al., ""Automatização de Teste de Software com Ferramentas de Software Livre"". Elsevier, 2018.
+[defeitos-07] Referências da aula de defeitos: Boehm e Basili, Software Defect Reduction Top 10 List (IEEE Software, 2001); Endres e Rombach, A Handbook of Software and Systems Engineering (Addison Wesley, 2003); IBM, Orthogonal Defect Classification v5.2 (2013); IEEE Std 1044-2009, Standard Classification for Software Anomalies (2010); Kalinowski, Card e Travassos, Evidence-Based Guidelines to Defect Causal Analysis (IEEE Software, 2012); Wagner, Software Product Quality Control (Springer, 2013).
+[defeitos-06] Taxonomia definida por Shull (1998), a partir do padrão IEEE 830 (1998), para a natureza de defeitos em documentos de requisitos:
+- Omissão: informação necessária não incluída.
+- Ambiguidade: informação passível de ter múltiplas interpretações.
+- Inconsistência: informações conflitantes.
+- Fato Incorreto: informação que não é verdadeira para as condições especificadas.
+- Informação Estranha: informação desnecessária.
+Atividade da aula: identificar um exemplo prático comum para cada natureza de defeito.
+[garantia-05] Recorte de um checklist de garantia da qualidade. Colunas: Fase, Questão, Foco (Processo ou Produto), Sim, Não. Exemplos de questões da Fase de Levantamento:
+1. Foram realizadas reuniões para o levantamento de requisitos? (Processo)
+1.1. Foram gerados documentos de controle, como atas, após as reuniões? (Processo)
+1.2. Os documentos gerados foram assinados por todos os participantes da(s) reunião(ões)? (Produto)
+2. O documento de visão foi criado? (Processo)
+2.2. O escopo do documento de visão está definido no mesmo? (Produto)
+2.3. O documento de visão descreve o problema a ser solucionado? (Produto)
+2.4. O documento de visão descreve os interessados (stakeholders e usuários) no produto e suas necessidades? (Produto)
+2.5. O documento de visão apresenta uma visão geral do produto? (Produto)
+2.6. O documento de visão define os requisitos (funcionais, não-funcionais etc.) e restrições técnicas do produto? (Produto)","Os livros da bibliografia básica são:
+
+- WAGNER, S., *Software Product Quality Control*. Springer, 2013.
+- DELAMARO, M.E., MALDONADO, J.C., JINO, M., *Introdução ao Teste de Software*. Elsevier, 2ª edição, 2016.
+- ANICHE, M., *Effective Software Testing: A Developer's Guide*. Simon and Schuster, 2022.",,,
+a31,Quais são as técnicas de teste caixa preta vistas na disciplina?,"Partição de equivalência, análise do valor limite, tabela de decisão, teste de transição de estados e teste de caso de uso.","[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.
+[caixapreta-01] Técnicas baseadas em especificação ou caixa preta: Partição de equivalência, Análise do valor limite, Tabela de decisão, Teste de transição de estados e Teste de caso de uso.
+[visao-17] Processo de teste, de forma geral: Planejar Teste -> Projetar Teste -> Executar Teste -> Analisar Resultado. Se há defeito, passa-se a Gerenciar Resultado.
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.","As técnicas baseadas em especificação ou caixa preta vistas na disciplina são:
+
+- Partição de equivalência
+- Análise do valor limite
+- Tabela de decisão
+- Teste de transição de estados
+- Teste de caso de uso",,,
+a32,Como é calculado o G1?,G1 = P1 * 0.8 + N&P * 0.2 (N&P = nanochallenges e participação em aula).,"[intro-06] Avaliação da disciplina: 1 Prova (P1), 1 Desafio Maior (DM) e Nanochallenges e participação em aula (N&P).
+Critério de cálculo:
+- G1 = P1 * 0.8 + N&P * 0.2
+- G2 = DM * 0.75 + N&P * 0.25
+- Se G2 < 3, então MÉDIA = (G1 + (G2 * 3)) / 4
+Para ser aprovado o aluno deverá alcançar Grau Final >= 5.
+Faltou a P1: faltar a P1 sem justificativa plausível é zero; com justificativa, o aluno pode fazer a segunda chamada.
+[caixapreta-04] Análise do Valor Limite: o comportamento nos limites de uma partição de equivalência é onde existe maior probabilidade de estar incorreto. Portanto, limites são áreas onde testes estão mais propensos a indicar defeitos. Os valores limites de uma partição são seu máximo e seu mínimo. Esta técnica é muitas vezes considerada uma extensão da partição de equivalência e pode ser aplicada para entradas manuais como, por exemplo, em escalas de tempo.
+Exemplo de limites por partição: para uma partição válida de 1 a 12, os valores ...-2, -1, 0 formam a partição inválida 1, de 1 a 12 a partição válida, e 13, 14, 15... a partição inválida 2.
+[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[garantia-03] Gerência da Qualidade de Software. A norma ISO 25001 tem como propósito a gerência da qualidade de produtos com base em requisitos de qualidade e avaliação.
+Gerenciamento da qualidade envolve (Tian, 2005) (Wagner, 2013):
+- Definir objetivos específicos de qualidade.
+- Planejar uma estratégia de qualidade: 1) selecionar métodos apropriados de garantia da qualidade, verificação e validação (V&V); 2) selecionar medidas apropriadas para permitir a avaliação da qualidade.
+- Avaliar e controlar a qualidade.
+A Gerência da Qualidade se divide em três partes: Garantia da Qualidade, Verificação e Validação.",G1 = P1 * 0.8 + N&P * 0.2,,,
+a33,Qual a data de entrega do desafio e quantas pessoas compõem cada time?,Entrega em 25/11 (início das apresentações); times de 4 pessoas.,"[challenge-03] Atividades da aula de início do Challenge:
+- Parte 1 - Definição dos grupos: fornecer os nomes dos membros do grupo na planilha da turma (Turma A ou Turma B). Tempo: 6 minutos.
+- Parte 2 - Identificar perguntas norteadoras (Guiding Questions): identificar pelo menos 20 perguntas norteadoras. Tempo: 20 minutos.
+- Parte 3 - Categorizar e priorizar as perguntas.
+- Parte 4 - Atividades norteadoras (Guiding Activities): fornecer atividades norteadoras para responder cada pergunta. Dica: comece com um verbo no infinitivo, como Pesquisar, Entrevistar, Assistir, Ler etc.
+[challenge-01] Regras do Challenge (desafio) da disciplina:
+- Time de 4 pessoas.
+- Entregáveis: Documento CBL e Apresentação (PDF) no formato de 7 minutos.
+- A entrega será no Moodle.
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[visao-16] Exemplos de requisitos não-funcionais de desempenho:
+- RNF01-008: tempo médio de resposta de 2 segundos.
+- RNF01-009: tempo máximo de resposta (pico) de 10 segundos.
+- RNF01-010: vazão (throughput) acima de 50 requisições por segundo por máquina.
+- RNF01-011: atender a 450 mil visitantes únicos por dia.","**Time:** cada time deve ter **4 pessoas**.
+
+**Data de entrega:** o contexto que tenho não informa a data. Sei apenas que a entrega é feita no **Moodle** e consiste no **Documento CBL** e na **Apresentação (PDF) de 7 minutos**. Para a data, consulte o cronograma da disciplina ou o próprio Moodle, ou pergunte ao professor.",,,
+a34,Quais dias são feriado sem aula?,"07/09 (Independência do Brasil), 12/10 (Nossa Senhora Aparecida) e 02/11 (Finados).","[challenge-03] Atividades da aula de início do Challenge:
+- Parte 1 - Definição dos grupos: fornecer os nomes dos membros do grupo na planilha da turma (Turma A ou Turma B). Tempo: 6 minutos.
+- Parte 2 - Identificar perguntas norteadoras (Guiding Questions): identificar pelo menos 20 perguntas norteadoras. Tempo: 20 minutos.
+- Parte 3 - Categorizar e priorizar as perguntas.
+- Parte 4 - Atividades norteadoras (Guiding Activities): fornecer atividades norteadoras para responder cada pergunta. Dica: comece com um verbo no infinitivo, como Pesquisar, Entrevistar, Assistir, Ler etc.
+[challenge-01] Regras do Challenge (desafio) da disciplina:
+- Time de 4 pessoas.
+- Entregáveis: Documento CBL e Apresentação (PDF) no formato de 7 minutos.
+- A entrega será no Moodle.
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.","Os feriados sem aula são:
+
+- **07/09**: Independência do Brasil
+- **12/10**: Nossa Senhora Aparecida
+- **02/11**: Finados",,,
+a35,O que é a pirâmide de testes?,NÃO CONSTA,"[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[visao-08] Estrutura de um Plano de Teste:
+- Missão de Avaliação e Motivação dos Testes; Itens-alvo dos Testes; Resumo dos Testes Planejados; Abordagem dos Testes.
+- Técnicas e Tipos de Teste: Teste de Integridade de Dados e de Banco de Dados, Teste de Função, Teste de Ciclos de Negócios, Teste da Interface do Usuário, Determinação do Perfil de Desempenho, Teste de Carga, Teste de Stress, Teste de Volume, Teste de Segurança e de Controle de Acesso, Teste de Tolerância a Falhas e de Recuperação, Teste de Configuração, Teste de Instalação.
+- Produtos Liberados: Sumários de Avaliação de Testes, Relatórios da Cobertura de Teste, Relatórios da Qualidade Perceptível, Registros de Incidentes e Solicitações de Mudança, Conjunto de Testes de Regressão e Scripts de Teste de Suporte, Resultados Detalhados dos Testes, Matrizes de Rastreabilidade.
+- Necessidades Ambientais: Hardware Básico do Sistema, Elementos de Software Básicos do Ambiente de Teste, Ferramentas de Produtividade e de Suporte, Configurações do Ambiente de Teste.
+- Riscos, Dependências, Suposições e Restrições.","O material fornecido não trata da pirâmide de testes, então a explicação abaixo é geral e não faz parte do conteúdo da disciplina.
+
+A **pirâmide de testes** é um modelo proposto por Mike Cohn que sugere como distribuir os testes automatizados em camadas, de acordo com custo, velocidade e quantidade:
+
+1. **Base (muitos testes):** testes de unidade. São rápidos, baratos de escrever e de executar, e isolam pequenas partes do código.
+2. **Camada intermediária:** testes de integração e de serviços, que verificam a interação entre componentes, módulos ou APIs.
+3. **Topo (poucos testes):** testes de interface e ponta a ponta (end-to-end), que simulam o usuário. São lentos, mais frágeis e caros de manter.
+
+A ideia central é ter muitos testes na base e poucos no topo. Uma estrutura invertida, com muitos testes de interface e poucos de unidade, costuma ser chamada de ""cone de sorvete"" e é considerada um antipadrão, porque torna a suíte lenta e difícil de manter.
+
+Relacionando com os tipos vistos na disciplina, os testes de unidade e de integração ficam na base e na camada intermediária, enquanto os testes de aceitação e de interface com o usuário ficam no topo.
+
+Se a sua dúvida vier de outra fonte, como o livro-texto ou os slides, vale verificar a definição nesse material.",,,
+a36,Quais são as variações do teste de desempenho e que riscos ele ajuda a verificar?,"Variações: teste de carga, de stress e de configuração. Riscos: capacidade, componente, longevidade, comparação, carga e validação (violação de SLA).","[visao-15] Riscos verificados com testes de desempenho:
+- Capacidade: o sistema atende ao volume demandado em operação?
+- Componente: o componente atende aos requisitos de desempenho? Está contribuindo para o não cumprimento de um requisito de desempenho?
+- Longevidade: o desempenho será consistente e aceitável em 1 ano?
+- Comparação: como o desempenho vem evoluindo no tempo?
+- Carga: quantos usuários a aplicação suporta adequadamente? Até quando a base de dados pode crescer? Quando a infraestrutura de rede irá sobrecarregar?
+- Validação: alguma SLA será violada com esta nova release do software?
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[visao-08] Estrutura de um Plano de Teste:
+- Missão de Avaliação e Motivação dos Testes; Itens-alvo dos Testes; Resumo dos Testes Planejados; Abordagem dos Testes.
+- Técnicas e Tipos de Teste: Teste de Integridade de Dados e de Banco de Dados, Teste de Função, Teste de Ciclos de Negócios, Teste da Interface do Usuário, Determinação do Perfil de Desempenho, Teste de Carga, Teste de Stress, Teste de Volume, Teste de Segurança e de Controle de Acesso, Teste de Tolerância a Falhas e de Recuperação, Teste de Configuração, Teste de Instalação.
+- Produtos Liberados: Sumários de Avaliação de Testes, Relatórios da Cobertura de Teste, Relatórios da Qualidade Perceptível, Registros de Incidentes e Solicitações de Mudança, Conjunto de Testes de Regressão e Scripts de Teste de Suporte, Resultados Detalhados dos Testes, Matrizes de Rastreabilidade.
+- Necessidades Ambientais: Hardware Básico do Sistema, Elementos de Software Básicos do Ambiente de Teste, Ferramentas de Produtividade e de Suporte, Configurações do Ambiente de Teste.
+- Riscos, Dependências, Suposições e Restrições.","**Variações do teste de desempenho** (conforme [visao-14]):
+
+- **Teste de Carga:** número de usuários, número de transações e tamanho da base de dados.
+- **Teste de Stress:** memória limitada, espaço em disco insuficiente, falhas em servidores e número extremamente alto de usuários.
+- **Teste de Configuração:** determina a configuração mínima e ótima de hardware e software, o efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede) e testa padrões de compatibilidade.
+
+**Riscos verificados com testes de desempenho** (conforme [visao-15]):
+
+- **Capacidade:** o sistema atende ao volume demandado em operação?
+- **Componente:** o componente atende aos requisitos de desempenho e está contribuindo para o não cumprimento de algum requisito?
+- **Longevidade:** o desempenho será consistente e aceitável em 1 ano?
+- **Comparação:** como o desempenho vem evoluindo no tempo?
+- **Carga:** quantos usuários a aplicação suporta adequadamente, até quando a base de dados pode crescer e quando a infraestrutura de rede irá sobrecarregar?
+- **Validação:** alguma SLA será violada com esta nova release do software?",,,
+a37,Em que data é a P1?,14/10 (a revisão para a P1 é em 07/10).,"[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[intro-03] Ementa detalhada (parte 1):
+- Introdução do curso e dinâmica Speed Dating
+- Entendendo sobre qualidade de produto de software e dinâmica Brainwriting
+- CBL
+- Processo de Software e Requisitos Funcionais e não funcionais
+- Verificação e Validação
+- Teste de Software: Conceitos e Definições
+- 02/09 - Lab de Testes Unitários com Nanodesafio
+- Aula no lab de Testes Funcionais
+- Técnicas de teste: parte 1 e parte 2
+- Planejamento de teste: parte 1 e parte 2 no lab
+- Roteirização de Teste com nanochallenge: parte 1 e 2
+- 07/10 - Revisão para a P1
+- 14/10 - P1
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[intro-06] Avaliação da disciplina: 1 Prova (P1), 1 Desafio Maior (DM) e Nanochallenges e participação em aula (N&P).
+Critério de cálculo:
+- G1 = P1 * 0.8 + N&P * 0.2
+- G2 = DM * 0.75 + N&P * 0.25
+- Se G2 < 3, então MÉDIA = (G1 + (G2 * 3)) / 4
+Para ser aprovado o aluno deverá alcançar Grau Final >= 5.
+Faltou a P1: faltar a P1 sem justificativa plausível é zero; com justificativa, o aluno pode fazer a segunda chamada.","A P1 será no dia **14/10 (quarta-feira)**, conforme o cronograma da disciplina. A revisão para a prova é em 07/10.",,,
+a38,Quais são as técnicas de teste caixa preta vistas na disciplina?,"Partição de equivalência, análise do valor limite, tabela de decisão, teste de transição de estados e teste de caso de uso.","[visao-13] Teste de Aceitação: tem definição controversa. Na disciplina é usado com o seguinte propósito: teste caixa preta que simula a interação do usuário com o sistema, geralmente baseado em cenários de testes extraídos dos casos de uso.
+Ferramentas de teste de aceitação: Web - Selenium IDE; IBM - Rational Functional Tester, Rational Test Manager, Rational Service Tester; Borland - SilkCentral Test Manager; HP - Quality Center; SoapUI - WebServices.
+[caixapreta-01] Técnicas baseadas em especificação ou caixa preta: Partição de equivalência, Análise do valor limite, Tabela de decisão, Teste de transição de estados e Teste de caso de uso.
+[visao-17] Processo de teste, de forma geral: Planejar Teste -> Projetar Teste -> Executar Teste -> Analisar Resultado. Se há defeito, passa-se a Gerenciar Resultado.
+[visao-04] Tipos de testes: Teste de Unidade, Teste de Integração, Teste de Regressão, Teste de Sistema, Teste de Aceitação, Teste de Integridade de Dados e de Banco de Dados, Teste Funcional, Teste de Interface com o usuário, Teste de desempenho, Teste de Carga, Teste de Stress, Teste de Segurança, Teste de Tolerância a Falhas, Teste de Recuperação, Teste de Configuração, entre outros. A lista não é exaustiva: provavelmente existe algum tipo de teste que não está nela.","Na disciplina, as técnicas baseadas em especificação ou caixa preta são:
+
+1. **Partição de equivalência**
+2. **Análise do valor limite**
+3. **Tabela de decisão**
+4. **Teste de transição de estados**
+5. **Teste de caso de uso**",,,
+a39,Em que sala e horário são as aulas da INF1027?,NÃO CONSTA,"[intro-05] Dias de laboratório em 2026: 02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+Feriados (sem aula): 07/09 - Independência do Brasil; 12/10 - Nossa Senhora Aparecida; 02/11 - Finados.
+[intro-01] Disciplina Teste e Medição de Software (INF1027), PUC-Rio. Professor: Andrew Diniz da Costa, DSc., do Departamento de Informática (andrew@puc-rio.br).
+O professor é professor de Engenharia de Software do DI da PUC-Rio, orientador de alunos de graduação, pesquisador e coordenador de projetos acadêmicos e de pesquisa no Laboratório de Engenharia de Software (LES), consultor educacional no ECOA e tem mais de 25 anos de experiência com projetos de desenvolvimento.
+[intro-07] Dinâmica Speed Dating, feita na primeira aula para os alunos se conhecerem. A dinâmica é dividida em rodadas de 4 minutos, com os alunos sentados em duplas. Ao final de cada rodada, algumas pessoas são convidadas a falar um pouco do parceiro. Informações trocadas: nome, curso e período, experiência e interesses.
+[challenge-03] Atividades da aula de início do Challenge:
+- Parte 1 - Definição dos grupos: fornecer os nomes dos membros do grupo na planilha da turma (Turma A ou Turma B). Tempo: 6 minutos.
+- Parte 2 - Identificar perguntas norteadoras (Guiding Questions): identificar pelo menos 20 perguntas norteadoras. Tempo: 20 minutos.
+- Parte 3 - Categorizar e priorizar as perguntas.
+- Parte 4 - Atividades norteadoras (Guiding Activities): fornecer atividades norteadoras para responder cada pergunta. Dica: comece com um verbo no infinitivo, como Pesquisar, Entrevistar, Assistir, Ler etc.","Não tenho essa informação no contexto disponível: ele não traz a sala nem o horário das aulas da INF1027. Para confirmar, consulte o Portal do Aluno ou a página da disciplina, ou entre em contato com o professor Andrew Diniz da Costa pelo e-mail andrew@puc-rio.br.
+
+Posso ajudar com as datas dos dias de laboratório de 2026, que estão no contexto:
+
+02/09, 14/09, 16/09, 21/09, 23/09, 28/09, 30/09, 05/10, 07/10, 19/10, 21/10, 26/10, 28/10, 04/11, 09/11, 11/11, 16/11, 18/11, 23/11, 25/11, 30/11 e 02/12.
+
+Não haverá aula nos feriados de 07/09 (Independência do Brasil), 12/10 (Nossa Senhora Aparecida) e 02/11 (Finados).",,,
+a40,O que é a análise do valor limite?,"Técnica caixa preta que testa os limites (máximo e mínimo) das partições de equivalência, pois é nos limites que há maior probabilidade de comportamento incorreto; é considerada uma extensão da partição de equivalência.","[caixapreta-04] Análise do Valor Limite: o comportamento nos limites de uma partição de equivalência é onde existe maior probabilidade de estar incorreto. Portanto, limites são áreas onde testes estão mais propensos a indicar defeitos. Os valores limites de uma partição são seu máximo e seu mínimo. Esta técnica é muitas vezes considerada uma extensão da partição de equivalência e pode ser aplicada para entradas manuais como, por exemplo, em escalas de tempo.
+Exemplo de limites por partição: para uma partição válida de 1 a 12, os valores ...-2, -1, 0 formam a partição inválida 1, de 1 a 12 a partição válida, e 13, 14, 15... a partição inválida 2.
+[visao-14] Teste de Desempenho: tipo de teste utilizado para verificação da conformidade com os requisitos não-funcionais, identificação de gargalos na arquitetura, verificação da adequação do ambiente, avaliação da escalabilidade do software (número de usuários, grande massa de dados) e comparações (evoluções do mesmo software, softwares concorrentes).
+Variações:
+- Teste de Carga: número de usuários, número de transações, tamanho da base de dados.
+- Teste de Stress: memória limitada, espaço em disco insuficiente, falhas em servidores, número extremamente alto de usuários.
+- Teste de Configuração: determina a configuração mínima e ótima de hardware e software; efeito de adicionar ou modificar recursos computacionais (memória, disco, CPU e rede); testa padrões de compatibilidade.
+[caixapreta-01] Técnicas baseadas em especificação ou caixa preta: Partição de equivalência, Análise do valor limite, Tabela de decisão, Teste de transição de estados e Teste de caso de uso.
+[visao-15] Riscos verificados com testes de desempenho:
+- Capacidade: o sistema atende ao volume demandado em operação?
+- Componente: o componente atende aos requisitos de desempenho? Está contribuindo para o não cumprimento de um requisito de desempenho?
+- Longevidade: o desempenho será consistente e aceitável em 1 ano?
+- Comparação: como o desempenho vem evoluindo no tempo?
+- Carga: quantos usuários a aplicação suporta adequadamente? Até quando a base de dados pode crescer? Quando a infraestrutura de rede irá sobrecarregar?
+- Validação: alguma SLA será violada com esta nova release do software?","A **análise do valor limite** é uma técnica de teste baseada em especificação (caixa preta), considerada uma extensão da **partição de equivalência**.
+
+Ela parte da ideia de que o comportamento nos limites de uma partição é onde existe maior probabilidade de erro. Por isso, os testes têm mais chance de revelar defeitos nesses pontos. Os valores limites de uma partição são o seu **mínimo** e o seu **máximo**.
+
+**Exemplo:** para uma partição válida de 1 a 12:
+
+- **Partição inválida 1:** ..., -2, -1, 0
+- **Partição válida:** 1 a 12 (os valores de teste devem incluir 1 e 12)
+- **Partição inválida 2:** 13, 14, 15, ...
+
+Nesse caso, os valores de teste mais relevantes são 0 e 1 (em torno do limite inferior) e 12 e 13 (em torno do limite superior).
+
+A técnica também pode ser aplicada a entradas manuais, como escalas de tempo.",,,
