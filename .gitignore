@@ -1,0 +1,11 @@
+# segredos
+.env
+
+# ensaio com dados falsos
+results/fake/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
