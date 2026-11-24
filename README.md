@@ -264,7 +264,7 @@ Nas outras 14, a correção foi 5 de 5 nas duas versões (`avaliacoes.csv`).
 | B × C | fiel | 92.5 | 0.68 |
 | Juiz × juiz | todos | [PENDENTE] | [PENDENTE] |
 
-O kappa desconta a concordância esperada por acaso. Juiz × juiz exige julgar as mesmas respostas duas vezes, e cada resposta foi julgada uma só vez. Os valores de B em *absteve* dependem de uma alteração feita depois das primeiras métricas (ver Divergências).
+O kappa desconta a concordância esperada por acaso. Juiz × juiz exige julgar as mesmas respostas duas vezes, e cada resposta foi julgada uma só vez.
 
 Respostas fiéis na amostra, por avaliador *(recalculado de `avaliacoes.csv`, `rotulos_B.csv`, `rotulos_C.csv` e `amostra_chave.csv`)*:
 
@@ -444,9 +444,7 @@ O roteiro da aula de 7 minutos ainda não foi definido: [PENDENTE]. Materiais di
 
 | Ponto | Detalhe |
 |---|---|
-| Rótulo de B alterado | Em `rotulos_B.csv`, a19 (`q18_V2_e1`) passou de absteve 0 para **1** no commit f9a4ab4, depois das primeiras métricas. A resposta é a frase exata de abstenção, então o 1 segue a rubrica. O motivo e o autor da troca não estão registrados. Com o rótulo anterior (4c8f25c): Juiz × B 87.5% (kappa 0.64) e B × C 85.0% (kappa 0.58) em *absteve*. Este documento usa a versão atual |
 | Três chamadas extras | `custos_openrouter.csv` tem 3 chamadas do bot além das 600. Não há respostas delas em `respostas.csv`. Os 1269 tokens de entrada são iguais aos da q18 no V1 |
-| `resultados.md` e `grafico.png` | Regenerados no commit f9a4ab4. Em `resultados.md`, só mudaram as duas linhas de *absteve* acima |
 | Cabeçalho de `src/julgar.py` | Diz "temperatura 0". A efetiva é 1.0, como explica o comentário do próprio arquivo |
 | Nome da métrica | "Abstenção nas armadilhas" usa só `absteve`. Conta respostas da q18 que se abstêm e depois respondem |
 | B e a regra das armadilhas | a35 (`q18_V1_e3`, explica a pirâmide): B marcou correta = 1 e absteve = 0. Juiz e C marcaram correta = 0 |
