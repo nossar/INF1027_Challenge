@@ -28,13 +28,13 @@
 | Par | Campo | Concordância (%) | Kappa de Cohen | n |
 |---|---|---|---|---|
 | Juiz × B | correta | 97.5 | 0.87 | 40 |
-| Juiz × B | absteve | 87.5 | 0.64 | 40 |
+| Juiz × B | absteve | 90.0 | 0.72 | 40 |
 | Juiz × B | fiel | 77.5 | 0.34 | 40 |
 | Juiz × C | correta | 97.5 | 0.89 | 40 |
 | Juiz × C | absteve | 97.5 | 0.94 | 40 |
 | Juiz × C | fiel | 85.0 | 0.55 | 40 |
 | B × C | correta | 95.0 | 0.77 | 40 |
-| B × C | absteve | 85.0 | 0.58 | 40 |
+| B × C | absteve | 87.5 | 0.66 | 40 |
 | B × C | fiel | 92.5 | 0.68 | 40 |
 
 `n` = itens com nota válida nos dois lados (rótulos vazios ou erros ficam de fora).
